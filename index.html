@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="english">
-    <head>Mariana's Daily Blog</head>
+
+    <head>
+        <title>Mari's Blog</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
     <body>
-        <form>
-            <label>Username</label><br> <!--what is 'for' in <label for=""-->
-            <input type="text" name="username"><br>
-            <label>Title</label><br>
-            <input type="text" name="title"><br>
-            <label>Content</label><br>
-            <input type="text" name="content"><br>
+        <header>
+            <h1>Mari's Blog</h1>
+        </header>
+        <form >
+            <label for="username">Username</label><br> <!--what is 'for' in <label for=""-->
+            <input type="text" id="username"><br>
+            <label for="title">Title</label><br>
+            <input type="text" id="title"><br>
+            <label for="content">Content</label><br>
+            <input type="text" id="content"><br>
 
-            <input type="submit" name="submit">
+            <input type="submit" id="submit">
+            
+            <div>
+                <div>
+                    <p>Dark Mode</p>
+                </div>
 
+                <input id="dark-mode-checkbox" type="checkbox" onclick="toggleDarkMode()"
+                >
+                <span class="slider"></span>
+                </label>
+            <div>
+                <div>
+                    <p>Light Mode </p>
+                </div>
+            </div>
+            <script src="./script.js" ></script>
         </form>
     </body>
 </html>
+
+<!-- this will be on my next page-->>
+
+
